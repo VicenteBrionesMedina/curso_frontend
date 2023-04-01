@@ -9,6 +9,34 @@
     <title>Masterdots Game</title>
 </head>
 <body>
-    
+    <!-- Cabecera -->
+    <header>
+        <img src="./img/logo.png" alt="Logo Masterdots">
+    </header>
+    <!-- Formulario Usuario -->
+    <main>
+        <form action="#">
+            <div class="itemform">
+                <label for="nickname">Introduce tu Usuario: </label>
+                <input type="text" name="nickname" id="nickname" required>
+            </div>
+            <div class="itemform">
+                <label for="size">Tamaño del Juego</label>
+                <select name="size" id="size">
+                    <option value="">Elige un Tamaño</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <input type="submi" value="play">
+            </div>
+        </form>
+    </main>
+    <!-- Pie de Pagina -->
+    <footer>
+        <p>Curso FrontEnd HTML, CSS y JS</p>
+    </footer>
 </body>
 </html>
