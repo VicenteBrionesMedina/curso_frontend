@@ -1,17 +1,30 @@
-/*Comprobación de Datos*/
+/*JS Comprobación Datos Formulario Entrada*/
 
-//Capturar Valor Nobre
+//Inicialización Variables, Objetos y DOM
 const nicknameInput = document.getElementById("nickname");
-console.log(nicknameInput.nodeType);
-nicknameInput.value = "Vicente";
-console.log(nicknameInput.value)
+const sizeInput = document.getElementById("size");
+const entryForm = document.getElementById("entryForm");
+const errorAlert = document.getElementById("error");
 
-//Capturar Valor Select
-const inputSize = document.getElementById("size");
-console.log(inputSize.value)
-console.log(inputSize.options[inputSize.selectedIndex].text);
-
-//Eventos
-function test(){
-    console.log("Evento Click")
+//Funciones Evento
+function checkForm(event){
+    //Comprobar Formulario
+    if (nicknameInput.value.length == 0){
+        console.log("No hay nombre");
+        nicknameInput.focus();
+        event.preventDefault();
+        errorAlert.innerText = "El usuario no puede estar vacío";
+        return false;
+    }
+    else if (sizeInput.value == "0"){
+       console.log("No se selecciono tamaño de panel");
+       sizeInput.focus();
+       event.preventDefault();
+       errorAlert.innerText = "Selecciona un tamaño de juego";
+       return false;
+    }
+    return true;
 }
+
+//Carga Eventos
+entryForm.addEventListener("submit", checkForm);
