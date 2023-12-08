@@ -9,15 +9,13 @@ const errorAlert = document.getElementById("error");
 //Funciones Evento
 function checkForm(event){
     //Comprobar Formulario
-    if (nicknameInput.value.length == 0){
-        console.log("No hay nombre");
+    if (nicknameInput.value.match(/(?<!\S)[0-9]/)){
         nicknameInput.focus();
         event.preventDefault();
-        errorAlert.innerText = "El usuario no puede estar vacío";
+        errorAlert.innerText = "El usuario no puede comenzar con un numero";
         return false;
     }
     else if (sizeInput.value == "0"){
-       console.log("No se selecciono tamaño de panel");
        sizeInput.focus();
        event.preventDefault();
        errorAlert.innerText = "Selecciona un tamaño de juego";
