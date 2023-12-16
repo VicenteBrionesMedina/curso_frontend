@@ -1,0 +1,108 @@
+/*CSS*/
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: rgba(0, 0, 120, 0.9);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header, footer {
+    text-align: center;
+    width: 300px;
+    margin: 30px auto 0px auto;
+}
+
+header img {
+    width: 50%;
+}
+
+.content {
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.31);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    outline: 0px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 10px 20px 20px;
+}
+
+.content h1 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.currency-element {
+    margin: 10px 0px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency, .amount {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#unknown-amount{
+    cursor: not-allowed;
+}
+
+#summary {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 360px;
+    height: 10px;
+    padding: 10px;
+    resize: none;
+    font-family: monospace;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: not-allowed;
+    outline: none;
+    overflow: hidden;
+}
+
+#convert-button {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#convert-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+#error {
+    text-align: center;
+    color: #fd0c49;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px 0px;
+}

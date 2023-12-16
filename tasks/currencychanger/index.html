@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Conversor de Divisa</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="./img/coin.png" alt="Logo Moneda">
+    </header>
+
+    <!-- Cuadro de Conversion -->
+    <main>
+    <div class="content">
+        <h1>Conversor de Divisas</h1>
+        
+        <div>
+            <p id="error"></p>
+        </div>
+
+        <div class="currency-element">
+            <label for="known-currency">Monto: </label>
+            <div class="input-container">
+                <select name="known-currency" id="known-currency" class="currency">
+                    <option value="0">Dólar (USD)</option>
+                    <option value="1">Euro (EUR)</option>
+                    <option value="2">Peso Chileno (CLP)</option>
+                    <option value="3">Real Brasilero (BRL)</option>
+                </select>
+                
+                <input type="text" class="amount" id="known-amount" value="1">
+            </div>
+        </div>
+
+        <div class="currency-element">
+            <label for="unknown-currency">Convertido: </label>
+            <div class="input-container">
+                
+                <select name="unknown-currency" id="unknown-currency" class="currency">
+                    <option value="0">Dólar (USD)</option>
+                    <option value="1">Euro (EUR)</option>
+                    <option value="2">Peso Chileno (CLP)</option>
+                    <option value="3">Real Brasilero (BRL)</option>
+                </select>
+                <input type="text" class="amount" id="unknown-amount" value="1" readonly>
+            </div>
+        </div>
+
+        <div class="currency-element">
+            <textarea id="summary" readonly></textarea>
+        </div>
+
+        <button id="convert-button">Convertir</button>
+    </div>
+    </main>
+
+    <!-- Pie de Pagina -->
+    <footer>
+        <p>Vicente Briones Medina</p>
+    </footer>
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
