@@ -1,10 +1,16 @@
-/*JS Comprobación Datos Formulario Entrada*/
+/**
+ * JS Comprobación Datos Formulario Entrada
+ * @author Vicente Briones <vbriomed@gmail.com>
+ * {@link https://github.com/VicenteBrionesMedina/curso_frontend GitHub}
+ */
+
 
 //Inicialización Variables, Objetos y DOM
-const nicknameInput = document.getElementById("nickname");
-const sizeInput = document.getElementById("size");
-const entryForm = document.getElementById("entryForm");
-const errorAlert = document.getElementById("error");
+var nicknameInput;
+var sizeInput;
+var emailInput;
+var entryForm;
+var errorAlert;
 
 //Funciones Evento
 function checkForm(event){
@@ -21,8 +27,29 @@ function checkForm(event){
        errorAlert.innerText = "Selecciona un tamaño de juego";
        return false;
     }
+    userData(nicknameInput, sizeInput, emailInput)
+    userHistory(nicknameInput)
     return true;
 }
 
+function chargeDom() {
+    //Capturar Elementos
+    nicknameInput = document.getElementById("nickname");
+    sizeInput = document.getElementById("size");
+    emailInput = document.getElementById("email")
+    entryForm = document.getElementById("entryForm");
+    errorAlert = document.getElementById("error");
+
+    //Comprobar Error Game.html
+    if (sessionStorage.getItem("error") != null) {
+        errorAlert.innerText = sessionStorage.getItem("error");
+        sessionStorage.removeItem("error");
+    }
+    
+    entryForm.addEventListener("submit", checkForm);
+}
+
 //Carga Eventos
-entryForm.addEventListener("submit", checkForm);
+document.addEventListener("DOMContentLoaded", chargeDom)
+
+geolacationData();
