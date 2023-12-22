@@ -51,7 +51,7 @@ function userHistory(nickname) {
         history = [];
     }
     else {
-        history = JSON.parse(localStorage.getItem("history"))
+        history = JSON.parse(localStorage.getItem("history"));
     }
     let userRecord = {
         user: nickname.value,

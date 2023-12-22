@@ -11,6 +11,9 @@ var sizeInput;
 var emailInput;
 var entryForm;
 var errorAlert;
+var avatarItems;
+var itemImg;
+var avatarContainer;
 
 //Funciones Evento
 function checkForm(event){
@@ -27,9 +30,17 @@ function checkForm(event){
        errorAlert.innerText = "Selecciona un tamaño de juego";
        return false;
     }
-    userData(nicknameInput, sizeInput, emailInput)
-    userHistory(nicknameInput)
+    userData(nicknameInput, sizeInput, emailInput);
+    userHistory(nicknameInput);
     return true;
+}
+
+function imgMoving(event) {
+    itemImg = event.target;
+}
+
+function changeImg(event) {
+    avatarContainer.src = itemImg.src
 }
 
 function chargeDom() {
@@ -39,6 +50,8 @@ function chargeDom() {
     emailInput = document.getElementById("email")
     entryForm = document.getElementById("entryForm");
     errorAlert = document.getElementById("error");
+    avatarItems = document.getElementsByClassName("avatarImgItem");
+    avatarContainer = document.getElementById("avatarImg");
 
     //Comprobar Error Game.html
     if (sessionStorage.getItem("error") != null) {
@@ -47,6 +60,14 @@ function chargeDom() {
     }
     
     entryForm.addEventListener("submit", checkForm);
+
+    //Drag And Drop
+    for (let item of avatarItems) {
+        item.addEventListener("dragstart", imgMoving)
+    }
+
+    avatarContainer.addEventListener("dragover", event => {event.preventDefault()});
+    avatarContainer.addEventListener("drop", changeImg)
 }
 
 //Carga Eventos
