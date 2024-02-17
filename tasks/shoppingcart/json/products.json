@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "MSI 4070",
+        "price": 1000,
+        "image": "./img/MSI 4070.png"
+    },
+    {
+        "id": 2,
+        "name": "Gigabyte 4080",
+        "price": 1000,
+        "image": "./img/Gigabyte 4080.png"
+    },
+    {
+        "id": 3,
+        "name": "Intel Core i9 Extreme",
+        "price": 1000,
+        "image": "./img/Intel Core i9 Extreme.png"
+    },
+    {
+        "id": 4,
+        "name": "AMD Ryzen 9",
+        "price": 1000,
+        "image": "./img/AMD Ryzen 9.png"
+    },
+    {
+        "id": 5,
+        "name": "RAM 8GB DDR4 Kingstone Fury Beast",
+        "price": 1000,
+        "image": "./img/Kingstone Fury Beast.png"
+    },
+    {
+        "id": 6,
+        "name": "RAM 8GB DDR4 Corsair Vengeance",
+        "price": 1000,
+        "image": "./img/Corsair Vengeance.png"
+    },
+    {
+        "id": 7,
+        "name": "1TB NVMe M.2 Kingston Fury Renegade",
+        "price": 1000,
+        "image": "./img/Kingstone Fury Renegade.png"
+    },
+    {
+        "id": 8,
+        "name": "1TB NVMe M.2 WD Black SN850X",
+        "price": 1000,
+        "image": "./img/WD Black SN850X.png"
+    },
+    {
+        "id": 9,
+        "name": "Gabinete Cougar Conquer 2",
+        "price": 1000,
+        "image": "./img/Cougar Conquer 2.png"
+    },
+    {
+        "id": 10,
+        "name": "Gabinete Fantech CG71 Pulse RGB Space Editon",
+        "price": 1000,
+        "image": "./img/Fantech CG71 Pulse RGB Space Editon.png"
+    },
+    {
+        "id": 11,
+        "name": "Placa Base Gigabyte B550M Aorus Elite AX",
+        "price": 1000,
+        "image": "./img/B550M.png"
+    },
+    {
+        "id": 12,
+        "name": "Placa Base MSI MPG Z490 GP",
+        "price": 1000,
+        "image": "./img/Z490.png"
+    },
+    {
+        "id": 14,
+        "name": "Fuente de Alimentación Corsair CV650",
+        "price": 1000,
+        "image": "./img/Corsair CV650.png"
+    },
+    {
+        "id": 15,
+        "name": "Fuente de Alimentación MSI Game Pro",
+        "price": 1000,
+        "image": "./img/MSI Game Pro.png"
+    }
+]
