@@ -30,7 +30,7 @@ function checkForm(event){
        errorAlert.innerText = "Selecciona un tamaño de juego";
        return false;
     }
-    userData(nicknameInput, sizeInput, emailInput);
+    userData(nicknameInput, sizeInput, emailInput, avatarContainer);
     userHistory(nicknameInput);
     return true;
 }

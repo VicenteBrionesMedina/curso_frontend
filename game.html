@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/gamestyles.css">
     <title>Masterdots</title>
 </head>
 <body>
-    <h1>MASTERDOTS</h1>
+    <main>
+        <div id="gameContainer">
+            <div id="game">
+                <!-- Completar el panel de juego automaticamente -->
+                <!-- <div class="itemContainer"><div class="item"></div></div> -->
+            </div>
+            <div id="gameFinished">
+                <button id="newGame">Jugar de Nuevo</button>
+            </div>
+
+            <div id="gameTitle">
+                <p>MASTERDOTS</p>
+            </div>
+        </div>
+        <div id="userContainer">
+            <form action="game.html" id="entryForm">
+                <div class="itemForm">
+                    <img src="./img/avatar1.png" width="26" id="avatarImage">
+                    <input type="text" id="nickname" value="Nickname" readonly>
+                </div>
+                <div class="itemForm">
+                    <label for="points">Puntos</label>
+                    <input type="text" id="points" value="0" class="gameInput" readonly>
+                </div>
+                <div class="itemForm">
+                    <label for="time">Tiempo Restante</label>
+                    <input type="text" id="time" value="10" class="gameInput" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Curso FrontEnd JS, HTML y CSS
+    </footer>
     <!-- JS -->
     <script src="./js/userData.js"></script>
     <script src="./js/game.js"></script>

@@ -9,19 +9,22 @@ var nickname;
 var size;
 var email;
 var geolocationTxt;
+var avatarImage;
 
 //sessionStorage
-function userData(nickname, size, email) {
+function userData(nickname, size, email, avatarContainer) {
     sessionStorage.setItem("nickname", nickname.value);
     sessionStorage.setItem("size", size.value);
     sessionStorage.setItem("email", email.value);
     sessionStorage.setItem("geolocationTxt", geolocationTxt.value);
+    sessionStorage.setItem("avatarImage", avatarContainer.src);
 }
 
 function getUserData() {
     nickname = sessionStorage.getItem("nickname");
     size = sessionStorage.getItem("size");
     email = sessionStorage.getItem("email");
+    avatarImage = sessionStorage.getItem("avatarImage");
 }
 
 function checkUserData() {
