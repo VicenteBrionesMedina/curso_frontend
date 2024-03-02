@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/gamestyles.css">
+    <title>The Marvel's Card Game</title>
+</head>
+<body>
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Header Section -->
+        <header>
+
+            <!-- Header -->
+            <div class="header">
+                <h1>Memory Game</h1>
+                <h2>Edición Marvel</h2>
+            </div>
+
+            <!-- Game Info Section -->
+            <section>
+            <div class="scorePanel">
+                <h3>Panel de Puntuación</h3>
+                <div><span id="movesCounter">15</span>&nbsp;Movimientos</div>
+                <div><span id="pointsCounter">0</span>&nbsp;Puntos</div>
+            </div>
+            <div class="itemForm">
+                <img src="./img/Iron Man Logo.png" width="26" id="avatarImage">
+                <input type="text" id="nickname" value="Nickname" readonly>
+            </div>
+            </section>
+        </header>
+
+        <!-- Modal -->
+        <section id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <h2>¡Felicidades!</h2>
+                <p>Has encontrado todos los pares de cartas.</p>
+                <img src="./img/Captain America Thumbs Up.png" alt="Captain America Giving Thumbs Up" class="modalImg">
+                <button id="playAgainBtn">¿Jugar de Nuevo?</button>
+            </div>
+        </section>
+
+        <!-- Deck -->
+        <div class="deck">
+            <div id="game">
+                <!-- Complet Panel Cards-->
+                <!-- <div id=" " class="card `indexClass`" draggable="false"><img src=" "></div> -->
+            </div>           
+        </div>
+
+        <!-- JS Baits -->
+        <div class="bait baits"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Curso FrontEnd JS, HTML y CSS
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/userData.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>

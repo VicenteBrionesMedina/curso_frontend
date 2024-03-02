@@ -1,0 +1,193 @@
+/* Elements */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: url(../img/Marvel\ Comics\ Collage.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    margin: 30px auto 0px auto;
+}
+/* ---------- */
+
+/* Login Card */
+#card {
+    width: 450px;
+    background: rgba(255, 255, 255, .8);
+    padding: 3rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+#card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, .6);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+/* ---------- */
+
+/* Login Card Logo */
+#cardLogo {
+    margin-bottom: -1rem;
+}
+
+#cardLogo img {
+    width: 150px;
+}
+/* ---------- */
+
+/* Login Card Standard */
+#cardLogo,
+#cardTitle {
+    text-align: center;
+}
+/* ---------- */
+
+/* Login Card Title */
+#cardTitle {
+    margin-bottom: 2rem;
+}
+
+#cardTitle h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+/* ---------- */
+
+/* Login Card Form */
+#entryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#entryForm .formItem {
+    position: relative;
+}
+
+#entryForm .formItem .formItemIcon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+/* ---------- */
+
+/* Login Card Form General Elements */
+#entryForm .formItem input[type="text"], select {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+#entryFormd .formItem input:focus, .formItem select:focus {
+    background: white;
+}
+
+#entryForm button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+#entryForm button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+/* ---------- */
+
+/* Login Card Form Avatar */
+#entryForm .formItem #selectedAvatar {
+    float: left;
+}
+
+#entryForm .formItem #selectedAvatarContainer {
+    display: flex;
+    background-color: #fff;
+    border: solid 1px #333399;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#entryForm .formItem #selectedAvatarImg {
+    width: 100%;
+}
+
+#entryForm .formItem #avatargrid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5rem);
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
+    margin-top: 30px;
+}
+
+#entryForm .formItem .avatarItem {
+    background-color: #f5f5f5;
+    border: solid 1px #333399;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#entryForm .formItem .avatarItemImg {
+    height: 100%;
+    object-fit: contain;
+}
+/* ---------- */
+
+/* Error */
+#error {
+    text-align: center;
+    color: #fd0c49;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+/* ---------- */
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    #card {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
+/* ---------- */

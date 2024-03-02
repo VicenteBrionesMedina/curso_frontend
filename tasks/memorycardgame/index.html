@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>The Marvel's Card Game</title>
+</head>
+<body>
+    <!-- Main Container -->
+    <main id="cardContainer">
+
+        <!-- Login Card -->
+        <div id="card">
+
+            <!-- Header -->
+            <header>
+                <div id="cardLogo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div id="cardTitle">
+                    <h1>The Marvel's Card Game</h1>
+                </div>
+            </header>
+
+            <!-- Error Alert -->
+            <div>
+                <p id="error"></p>
+            </div>
+            
+            <!-- Form -->
+            <form action="game.html" id="entryForm">
+
+                <!-- Nickname Input -->
+                <div class="formItem">
+                    <span class="formItemIcon material-symbols-rounded">person</span>
+                    <input type="text" placeholder="Usuario" id="userInput" autofocus required>
+                </div>
+
+                <!-- Difficulty Input -->
+                <div class="formItem ">
+                    <span class="formItemIcon material-symbols-rounded">sort</span>
+                    <select name="difficulty" id="difficultySelect" required>
+                        <option value="0">Dificultad</option>
+                        <option value="3">Baja</option>
+                        <option value="2">Media</option>
+                        <option value="1">Alta</option>
+                    </select>
+                </div>
+
+                <!-- Quantity Input -->
+                <div class="formItem">
+                    <span class="formItemIcon material-symbols-rounded">tag</span>
+                    <select name="quantity" id="quantitySelect" required>
+                        <option value="0">Cantidad de Cartas</option>
+                        <option value="3">9</option>
+                        <option value="4">16</option>
+                        <option value="5">25</option>
+                    </select>
+                </div>
+
+                <!-- Avatar -->
+                <div class="formItem">
+
+                    <!-- Selected Avatar -->
+                    <div id="selectedAvatar">
+                        <div id="selectedAvatarContainer">
+                            <img src="./img/Iron Man Logo.png" alt="" id="selectedAvatarImg">
+                        </div>
+                    </div>
+
+                    <!-- Avatar Options -->
+                    <div id="avatargrid">
+                        <div class="avatarItem">
+                            <img src="./img/Iron Man Logo.png" alt="" class="avatarItemImg" width="35" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./img/Captain America Logo.png" alt="" class="avatarItemImg" width="35" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./img/Thor Logo.png" alt="" class="avatarItemImg" width="35" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./img/Spider-Man Logo.png" alt="" class="avatarItemImg" width="35" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./img/Ant Man Logo.png" alt="" class="avatarItemImg" width="35" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./img/Star Lord Logo.png" alt="" class="avatarItemImg" width="35" draggable="true">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Form Button -->
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Curso FrontEnd HTML, CSS y JS</p>
+        </footer>
+    </main>
+
+    <!-- JS -->
+    <script src="./js/userData.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
